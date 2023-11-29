@@ -1,0 +1,716 @@
+$mobile: 600px;
+$tablet: 1264px;
+
+.header.scrolled {
+
+  .categories-top {
+
+    position: sticky;
+  }
+}
+
+.main-content {
+
+  background-color: white;
+
+  .categories-top {
+
+    display: none;
+    background-color: #f2f2f2;
+    position: relative;
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+
+      position: sticky;
+      top: 40px;
+      z-index: 500;
+
+      .a-img {
+
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5em;
+        border-bottom: 3px solid transparent;
+
+        &:hover {
+
+          color: #4ac0e0;
+          border-bottom-color: #4ac0e0;
+
+          img {
+
+            display: none;
+
+            &.hover {
+
+              display: block;
+            }
+          }
+        }
+
+        img {
+          width: 25px;
+          height: 25px;
+
+          &.hover {
+            display: none;
+          }
+        }
+
+        span {
+          font-weight: 400;
+          text-transform: none;
+          display: block;
+          padding: 2px 0;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .menu {
+
+      display: none;
+      position: absolute;
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, .2), 0 0 0 0 rgba(0, 0, 0, .14), 0 0 0 0 rgba(0, 0, 0, .12);
+      background-color: white;
+      border-color: white;
+      top: 73px;
+      z-index: 1;
+      width: 1200px;
+
+      .img-overlayed {
+
+        width: 272px;
+        height: 216px;
+
+        p {
+          color: white;
+          padding: 2px 12px;
+          margin: 0;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 18px;
+          text-align: center;
+
+          &.title {
+            padding: 0 0 10px;
+            font-size: 17.5px;
+            font-weight: 300;
+            text-transform: uppercase;
+            margin: .5em auto 0;
+            line-height: 1.1em;
+          }
+        }
+
+        &.esport-legion {
+          background-image: url("/resources/img/banners/legion_esport.png");
+        }
+
+        &.thinkcentre {
+          background-image: url("/resources/img/banners/thinkcentre.png");
+        }
+
+        &.tablet {
+          background-image: url("/resources/img/banners/tablet-2.png");
+        }
+
+        &.tablet-yoga {
+          background-image: url("/resources/img/banners/tablet-yoga.png");
+        }
+
+        &.monitor {
+          background-image: url("/resources/img/banners/monitor.png");
+        }
+
+        &.monitor-2 {
+          background-image: url("/resources/img/banners/monitor-2.png");
+        }
+
+        &.legion {
+          background-image: url("/resources/img/banners/legion.png");
+        }
+
+        &.ideapad {
+          background-image: url("/resources/img/banners/ideapad.png");
+        }
+
+        &.lenovo-go {
+          background-image: url("/resources/img/banners/lenovo-go.png");
+        }
+
+      }
+
+      ul {
+        padding: 0;
+        margin: 0;
+      }
+
+      .col > span {
+        color: #555;
+        font-weight: 800;
+        font-size: 14px;
+        cursor: pointer;
+
+        &:hover {
+
+          color: #0e5780;
+        }
+      }
+
+      .row {
+
+        gap: 5em;
+      }
+
+      .row.first {
+        padding: 2em;
+        width: 100%;
+
+
+        li {
+          padding-bottom: 0.5em;
+        }
+
+        a {
+          color: #555;
+          font-size: 14px;
+          position: relative;
+
+          &:hover {
+
+            color: #0e5780;
+
+            &:after {
+
+              display: inline;
+            }
+          }
+
+          &:after {
+
+            display: none;
+            content: ">";
+            position: absolute;
+            margin-left: 1em;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .row.second {
+
+        background-color: #d9eef7;
+
+        a {
+          color: #555;
+          padding: 0.33em;
+          text-align: center;
+          width: 100%;
+
+          &:hover {
+            color: #1976a1;
+          }
+        }
+      }
+    }
+  }
+
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    padding: 16px 0;
+
+    .a-img {
+
+      flex-direction: column;
+      align-items: center;
+
+      &:hover {
+
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, .2);
+      }
+
+      span {
+        font-size: 14px;
+      }
+
+      img {
+        width: 50px;
+        height: 50px;
+        margin: 0 30px 20px;
+      }
+    }
+  }
+
+  .spinner {
+
+    position: relative;
+
+    .countdown-wrapper {
+
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1;
+
+      color: white;
+      background-color: #6d0000b3;
+      padding: 1em;
+      font-size: 1em;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-align: center;
+      max-width: 300px;
+
+      border-bottom-left-radius: 8px;
+
+      @media screen and (min-width: $tablet) {
+        display: block;
+      }
+
+      p {
+        padding: 0 0 1em;
+        margin: 0;
+      }
+
+      table{
+        margin: 0 auto;
+        width: 70%;
+
+        th{
+          font-size: 13px;
+          font-weight: normal;
+        }
+      }
+    }
+
+    .contents {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      height: 232px;
+      position: relative;
+      background: url("/resources/img/spinner/thinkpad_x1.png") center center / cover no-repeat;
+      background-position: 100% 0;
+
+      @media screen and (min-width: $mobile) {
+        height: 540px;
+      }
+
+      @media screen and (min-width: $tablet) {
+        flex-direction: row;
+        justify-content: unset;
+      }
+
+      .overlay-wrapper {
+
+        background-color: rgba(0, 0, 0, .6);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 30px 40px;
+
+        @media screen and (min-width: $tablet) {
+          width: 600px;
+          padding: 80px 60px;
+        }
+      }
+
+      img {
+        object-fit: cover;
+      }
+
+      .overlay {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        bottom: 0;
+        width: 100%;
+
+        &.active {
+          display: flex;
+
+          @media screen and (min-width: $tablet) {
+            align-items: flex-start;
+          }
+        }
+
+        .logo-wrapper {
+
+          @media screen and (min-width: $tablet) {
+            width: 100%;
+          }
+
+          img.logo {
+
+            display: none;
+            width: unset;
+            max-height: 60px;
+
+            @media screen and (min-width: $mobile) {
+
+              display: block;
+            }
+
+            @media screen and (min-width: $tablet) {
+              max-height: 95px;
+            }
+          }
+        }
+
+        h2, span, p {
+          width: 100%;
+          text-align: center;
+          color: white;
+
+          @media screen and (min-width: $tablet) {
+            text-align: left;
+          }
+        }
+
+        h2 {
+          font-size: 20px;
+          line-height: 24px;
+          padding: 12px 0 6px;
+          margin: 0;
+
+          @media screen and (min-width: $mobile) {
+            font-size: 30px;
+            padding: 30px 0 15px;
+          }
+
+          @media screen and (min-width: $tablet) {
+            display: none;
+          }
+
+          &.sub {
+
+            display: none;
+
+            @media screen and (min-width: $tablet) {
+              display: block;
+              line-height: 2rem;
+            }
+          }
+        }
+
+        p {
+          margin-top: 0;
+          font-size: 14px;
+          line-height: 18px;
+
+          @media screen and (min-width: $mobile) {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+
+        a.button {
+
+          background-color: transparent;
+          border: none;
+          outline: none;
+          color: #46c8e1;
+          font-size: 14px;
+          font-weight: 700;
+          text-transform: capitalize;
+          padding: 0.3em 1.5em;
+          margin-bottom: 8px;
+          letter-spacing: .0892857143em;
+
+          &:hover {
+
+            background-color: rgba(14, 87, 128, 0.2);
+          }
+
+          @media screen and (min-width: $mobile) {
+            min-height: 45px;
+            line-height: 45px;
+            font-size: 16px;
+            margin: 12px;
+            border-color: #0e5780;
+            background-color: #0e5780;
+            color: white;
+            padding: 0 24px;
+
+            &:hover {
+              color: #0e5780;
+              background-color: #e8f3f9;
+            }
+          }
+
+          @media screen and (min-width: $tablet) {
+            margin: 0;
+          }
+        }
+
+      }
+    }
+
+    .bullets {
+
+      @media screen and (min-width: $mobile) {
+
+        display: none;
+      }
+    }
+
+    .pagination {
+
+      display: none;
+      border-top: 1px solid white;
+      width: 100%;
+      margin-top: 2em;
+
+      @media screen and (min-width: $mobile) {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      > span {
+        position: relative;
+        font-size: 13px;
+        line-height: 35px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: white;
+        cursor: pointer;
+
+        &.active:before {
+
+          content: " ";
+          position: absolute;
+          top: -3px;
+          left: 0;
+          right: 0;
+          height: 5px;
+          background: red;
+        }
+      }
+    }
+  }
+
+  .products {
+
+    .filter-tab {
+
+      display: none;
+
+      span {
+        font-size: 16px;
+        font-weight: 700;
+        color: #5c5c5c;
+        border-left: 1px solid #ccc;
+        text-align: center;
+        padding: 10px 0;
+        text-transform: uppercase;
+        background-color: #dfdfdf;
+        width: 100%;
+        cursor: pointer;
+
+        &.active {
+
+          background-color: white;
+          color: black;
+        }
+      }
+
+      @media screen and (min-width: $mobile) {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    .section {
+
+      h2 {
+        text-transform: uppercase;
+        text-align: center;
+
+        @media screen and (min-width: $mobile) {
+          display: none;
+        }
+      }
+
+      .product-list {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        overflow: auto;
+
+        @media screen and (min-width: $mobile) {
+
+          gap: 2em;
+          padding: 2em;
+
+          &:not(.active) {
+            display: none;
+          }
+        }
+
+        .product-card {
+          min-width: 165px;
+          max-width: 165px;
+          min-height: 455px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background: #f4f4f4;
+
+          @media screen and (min-width: $mobile) {
+
+            min-width: 246px;
+            max-width: 246px;
+
+            &:hover {
+              box-shadow: 0 0 20px 0 rgba(0, 0, 0, .2);
+            }
+          }
+
+          @media screen and (min-width: $tablet) {
+            max-width: 230px;
+            min-width: unset;
+          }
+
+          img {
+
+            object-fit: contain;
+            height: 206px;
+          }
+
+          h3 {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 20px;
+            padding: 6px;
+          }
+
+          p {
+            text-align: center;
+            font-size: .875rem;
+            font-weight: 400;
+            letter-spacing: .0071428571em;
+            line-height: 1.2em;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .banners {
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 1220px;
+    justify-content: center;
+    margin: 0 auto;
+
+    @media screen and (min-width: $tablet) {
+      flex-direction: row;
+    }
+
+    .container {
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-shadow: inset 0 0 0 50vw rgba(0, 0, 0, 0.6);
+      height: 220px;
+
+      @media screen and (min-width: $tablet) {
+        flex: 1;
+      }
+
+      &:hover {
+
+        p {
+          display: block;
+        }
+      }
+
+      h3 {
+        font-size: 24px;
+        line-height: 28px;
+        text-transform: uppercase;
+        color: white;
+        padding: 0 0 10px;
+        margin: 0;
+      }
+
+      p {
+        text-align: center;
+        color: #4ac0e0;
+
+        @media screen and (min-width: $tablet) {
+          display: none;
+          font-size: 18px;
+          line-height: 1.2em;
+          color: #46c8e1;
+        }
+      }
+
+      &.accessory {
+
+        background: url("/resources/img/banners/accessory.png") center center / cover no-repeat;
+      }
+
+      &.tablet {
+
+        background: url("/resources/img/banners/tablet.png") center center / cover no-repeat;
+      }
+
+      &.notebook {
+
+        background: url("/resources/img/banners/notebook.png") center center / cover no-repeat;
+      }
+    }
+  }
+
+  .explore {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: $tablet) {
+
+      display: none;
+    }
+
+    h3 {
+      margin: 0;
+      padding: .625em 0;
+      font-size: 1.25em;
+      border-bottom: 1px solid #efefef;
+      font-weight: 700;
+      color: #555;
+      text-align: center;
+      width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: .9375em;
+      text-transform: uppercase;
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid #efefef;
+      padding: .625em 0;
+    }
+  }
+}

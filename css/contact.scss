@@ -1,0 +1,161 @@
+$mobile: 750px;
+$tablet: 1180px;
+
+.main-content {
+
+  .content-wrapper {
+
+    padding: 0 40px;
+    background-color: #efefef;
+
+    @media screen and (min-width: $tablet) {
+      padding: 0 20em;
+    }
+
+    .header {
+
+      background-color: #e3e3e3;
+
+      .breadcrumbs {
+        @media screen and (min-width: $tablet) {
+          display: block;
+        }
+      }
+
+      h2 {
+        font-size: 1.75em;
+        font-weight: normal;
+        width: 100%;
+        line-height: 24px;
+        color: #373737;
+        margin: 0;
+        padding: 1.5em;
+        text-align: center;
+
+        @media screen and (min-width: $tablet) {
+          text-align: left;
+          padding: 0 1.5em 1.5em;
+
+        }
+      }
+    }
+
+    main {
+      background-color: white;
+
+      @media screen and (min-width: $tablet) {
+        padding: 40px;
+      }
+
+      .contact-banner {
+
+        margin: 0 0 30px 0;
+      }
+
+      section {
+
+        border: 1px solid #ddd;
+
+        h3 {
+          padding: 5px;
+          background: #eee;
+          color: #555;
+          font-size: 1em;
+          font-weight: normal;
+          margin: 0;
+        }
+
+        & > p {
+          padding: 1em;
+          word-break: break-word;
+
+          @media screen and (min-width: $tablet) {
+            padding: 1em 5em;
+          }
+        }
+
+        a {
+          color: #009dd9;
+        }
+      }
+
+      #contact-form {
+        padding: 1em;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1em;
+
+        @media screen and (min-width: $tablet) {
+          padding: 1em 5em;
+        }
+
+        label {
+          color: #555;
+          display: inline-flex;
+          flex-direction: column;
+
+          span {
+            font-size: 16px;
+            font-weight: bold;
+          }
+
+          &.span-2 {
+            grid-column: auto / span 2;
+          }
+        }
+
+        .row {
+          gap: 2em;
+        }
+
+        input, textarea {
+          border: 1px solid #777;
+          width: 100%;
+          outline: none;
+          font-size: 14px;
+          padding: 0.33em;
+          border-radius: 4px;
+
+          @media screen and (min-width: $tablet) {
+            padding: 1em;
+            font-size: 16px;
+            letter-spacing: 1px;
+          }
+        }
+
+        textarea {
+          resize: vertical;
+          min-height: 160px;
+        }
+
+        input[type=submit] {
+          padding: 1em;
+          color: #fff;
+          border-radius: 5px;
+          background: #4ac0e0;
+          transition: 0.2s;
+          outline: none;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          cursor: pointer;
+          border: 1px solid #4ac0e0;
+          grid-column: 2;
+
+          @media screen and (min-width: $tablet) {
+            width: 60%;
+            margin-left: auto;
+          }
+
+          &:hover {
+
+            color: #4ac0e0;
+            background-color: white;
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+  }
+}

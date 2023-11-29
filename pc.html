@@ -1,0 +1,826 @@
+<!doctype html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VIA - Lenovo</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/spinner.js"></script>
+    <script src="js/pc.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/pc.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+<header>
+    <div class="flex-group-1">
+        <div class="row-1">
+            <div class="hamburger-wrapper">
+                <div class="hamburger">
+                    <span class="hamburger-line l1"></span>
+                    <span class="hamburger-line l2"></span>
+                    <span class="hamburger-line l3"></span>
+                </div>
+                <span class="title">Menu</span>
+                <div style="display:none;" class="menu">
+
+                    <div class="item-wrapper foldable">
+                        <div class="item">
+                            <a>Počítače a tablety</a><span>+</span>
+                        </div>
+                        <div class="submenu">
+                            <a class="subitem" href="pc.html">
+                                <img src="resources/img/icon/home.svg"
+                                     alt="Počítače a tablety"><span>Počítače a tablety</span>
+                            </a>
+                            <a class="subitem">
+                                <img src="resources/img/icon/laptop.svg" alt="Notebooky"><span>Notebooky</span>
+                            </a>
+                            <a class="subitem">
+                                <img src="resources/img/icon/desktops.svg"
+                                     alt="Stolní počítače"><span>Stolní počítače</span>
+                            </a>
+                            <a class="subitem">
+                                <img src="resources/img/icon/workstations.svg" alt="Pracovní stanice"><span>Pracovní stanice</span>
+                            </a>
+                            <a class="subitem">
+                                <img src="resources/img/icon/tablets.svg" alt="Tablety"><span>Tablety</span>
+                            </a>
+                            <a class="subitem">
+                                <img src="resources/img/icon/monitors.svg" alt="Monitory"><span>Monitory</span>
+                            </a>
+                            <a class="subitem">
+                                <img src="resources/img/icon/gaming.svg" alt="Herní"><span>Herní</span>
+                            </a>
+                            <a class="subitem">
+                                <img src="resources/img/icon/accessories.svg"
+                                     alt="Příslušenství"><span>Příslušenství</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="item-wrapper">
+                        <div class="item">
+                            <a>Telefony</a><span>></span>
+                        </div>
+                    </div>
+
+                    <div class="item-wrapper foldable">
+                        <div class="item">
+                            <a>Servery a úložiště</a><span>+</span>
+                        </div>
+                        <div class="submenu">
+                            <a class="subitem">
+                                <img src="resources/img/icon/home.svg"
+                                     alt="Servery a úložiště"><span>SERVERY A ÚLOŽIŠTĚ</span>
+                            </a>
+                            <a class="subitem">
+                                <img src="resources/img/icon/solutions.svg" alt="Solutions"><span>Solutions</span>
+                            </a>
+                            <a class="subitem">
+                                <img src="resources/img/icon/server.svg" alt="Servers"><span>Servers</span>
+                            </a>
+                            <a class="subitem">
+                                <img src="resources/img/icon/storage.svg" alt="Storage"><span>Storage</span>
+                            </a>
+                            <a class="subitem">
+                                <img src="resources/img/icon/networking.svg" alt="Networking"><span>Networking</span>
+                            </a>
+                            <a class="subitem">
+                                <img src="resources/img/icon/software_defined_infrastructure.svg"
+                                     alt="Software-Defined Infrastructure"><span>Software-Defined Infrastructure</span>
+                            </a>
+                            <a class="subitem">
+                                <img src="resources/img/icon/software.svg" alt="Software"><span>Software</span>
+                            </a>
+                            <a class="subitem">
+                                <img src="resources/img/icon/services.svg" alt="Services"><span>Services</span>
+                            </a>
+                            <a class="subitem">
+                                <img src="resources/img/icon/support.svg" alt="Support"><span>Support</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="item-wrapper foldable">
+                        <div class="item">
+                            <a>Chytrá zařízení</a><span>+</span>
+                        </div>
+                        <div class="submenu">
+                            <a class="subitem">
+                                <img src="resources/img/icon/home.svg"
+                                     alt="Chytrá zařízení"><span>Chytrá zařízení</span>
+                            </a>
+                            <a class="subitem">
+                                <img src="resources/img/icon/smart_office.svg" alt="Chytrá spolupráce"><span>Chytrá spolupráce</span>
+                            </a>
+                            <a class="subitem">
+                                <img src="resources/img/icon/support.svg" alt="Podpora"><span>Podpora</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="item-wrapper foldable">
+                        <div class="item">
+                            <a>Služby a řešení</a><span>+</span>
+                        </div>
+                        <div class="submenu">
+                            <a class="subitem">
+                                <img src="resources/img/icon/home.svg"
+                                     alt="Služby a řešení"><span>Služby a řešení</span>
+                            </a>
+                            <a class="subitem">
+                                <img src="resources/img/icon/warranty.svg"
+                                     alt="Přehled záruk"><span>Přehled záruk</span>
+                            </a>
+                            <a class="subitem">
+                                <img src="resources/img/icon/services.svg" alt="Servis služby a záruka"><span>Servis služby a záruka</span>
+                            </a>
+                            <a class="subitem">
+                                <img src="resources/img/icon/server.svg" alt="Data Center Services"><span>Data Center Services</span>
+                            </a>
+                            <a class="subitem">
+                                <img src="resources/img/icon/lenovo_culture.svg" alt="Asset Recovery Services"><span>Asset Recovery Services</span>
+                            </a>
+                            <a class="subitem">
+                                <img src="resources/img/icon/solutions.svg" alt="Řešení"><span>Řešení</span>
+                            </a>
+                            <a class="subitem">
+                                <img src="resources/img/icon/support.svg" alt="Podpora"><span>Podpora</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="item-wrapper">
+                        <div class="item">
+                            <a>Podpora</a><span>></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="logo">
+                <a href="index.html">
+                    <img src="resources/img/logo_alt.png" alt="logo">
+                </a>
+            </div>
+            <div class="categories">
+                <a class="selected" href="pc.html">Počítače a tablety</a>
+                <a href="#">Telefony</a>
+                <a href="#">Servery a úložiště</a>
+                <a href="#">Chytrá zařízení</a>
+                <a href="#">Služby a řešení</a>
+                <a href="#">Podpora</a>
+            </div>
+        </div>
+        <div class="search-wrapper">
+            <input id="search" type="text" placeholder="HLEDAT">
+            <img src="resources/img/icon/magnifier.svg" alt="Lupa"/>
+        </div>
+    </div>
+    <div class="flex-group-2">
+        <div class="icons">
+            <div class="a-img search">
+                <a>Hledat</a>
+                <img src="resources/img/icon/magnifier.svg" alt="Lupa">
+            </div>
+            <div class="a-img">
+                <a>Kde zakoupit</a>
+                <img src="resources/img/icon/location.svg" alt="Kde zakoupit">
+            </div>
+            <div class="a-img">
+                <a href="contact.html">Kontakt</a>
+                <img src="resources/img/icon/headset.svg" alt="Kontakt">
+            </div>
+            <div class="a-img">
+                <a>Účet</a>
+                <img src="resources/img/icon/user.svg" alt="Účet">
+            </div>
+        </div>
+    </div>
+</header>
+<div class="main-content">
+
+    <div class="categories-top">
+
+        <a class="a-img" data-hover-menu="notebooks">
+            <img src="resources/img/icon/laptop.svg">
+            <img class="hover" src="resources/img/icon/laptop-hover.svg">
+            <span>Notebooky</span>
+        </a>
+
+        <div data-hover-menu="notebooks" class="menu">
+
+            <div class="row first">
+                <div class="col">
+                    <span>Prozkoumat notebooky</span>
+                    <ul>
+                        <li><a>Zobrazit všechny notebooky</a></li>
+                        <li><a>Tenké a lehké</a></li>
+                        <li><a>Herní notebooky</a></li>
+                        <li><a>Mobilní pracovní stanice</a></li>
+                        <li><a>Windows 11</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <span>Podle značky</span>
+                    <ul>
+                        <li><a>ThinkPad</a></li>
+                        <li><a>ThinkBook</a></li>
+                        <li><a>IdeaPad</a></li>
+                        <li><a>Yoga</a></li>
+                        <li><a>Legion</a></li>
+                        <li><a>LOQ Laptops</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row second">
+                <a href="#">Kde zakoupit</a>
+            </div>
+
+        </div>
+
+        <a class="a-img" data-hover-menu="pc">
+            <img src="resources/img/icon/desktops.svg">
+            <img class="hover" src="resources/img/icon/desktops-hover.svg">
+            <span>Stolní počítače</span>
+        </a>
+
+        <div data-hover-menu="pc" class="menu">
+
+            <div class="row first">
+                <div class="col">
+                    <span>Prozkoumat stolní počítače</span>
+                    <ul>
+                        <li><a>Zobrazit všechny stolní počítače</a></li>
+                        <li><a>Stolní počítače Tiny</a></li>
+                        <li><a>Herní stolní počítače</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <span>Podle značky</span>
+                    <ul>
+                        <li><a>ThinkCentre</a></li>
+                        <li><a>IdeaCentre</a></li>
+                        <li><a>Legion</a></li>
+                        <li><a>Lenovo</a></li>
+                        <li><a>LOQ Desktops</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <div class="img-overlayed esport-legion">
+                        <div class="overlay">
+                            <p class="title">Herní stolní počítače Legion</p>
+                            <p>Stylový zvenku. Nelítostný uvnitř.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="img-overlayed thinkcentre">
+                        <div class="overlay">
+                            <p class="title">Thinkcentre</p>
+                            <p>Špičkový výkon, vysoká spolehlivost</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row second">
+                <a href="#">Kde zakoupit</a>
+            </div>
+
+        </div>
+
+        <a class="a-img">
+            <img src="resources/img/icon/workstations.svg">
+            <img class="hover" src="resources/img/icon/workstations-hover.svg">
+            <span>Pracovní stanice</span>
+        </a>
+
+        <a class="a-img" data-hover-menu="tablets">
+            <img src="resources/img/icon/tablets.svg">
+            <img class="hover" src="resources/img/icon/tablets-hover.svg">
+            <span>Tablety</span>
+        </a>
+
+        <div data-hover-menu="tablets" class="menu">
+
+            <div class="row first">
+                <div class="col">
+                    <span>Prozkoumat tablety</span>
+                    <ul>
+                        <li><a>Se systémem Android</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <div class="img-overlayed tablet">
+                        <div class="overlay">
+                            <p class="title">Herní stolní počítače Legion</p>
+                            <p>Stylový zvenku. Nelítostný uvnitř.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="img-overlayed tablet-yoga">
+                        <div class="overlay">
+                            <p class="title">Thinkcentre</p>
+                            <p>Špičkový výkon, vysoká spolehlivost</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row second">
+                <a href="#">Kde zakoupit</a>
+            </div>
+
+        </div>
+
+        <a class="a-img" data-hover-menu="monitors">
+            <img src="resources/img/icon/monitors.svg">
+            <img class="hover" src="resources/img/icon/monitors-hover.svg">
+            <span>Monitory</span>
+        </a>
+
+        <div data-hover-menu="monitors" class="menu">
+
+            <div class="row first">
+                <div class="col">
+                    <span>Prozkoumat monitory</span>
+                    <ul>
+                        <li><a>Zobrazit všechny monitory</a></li>
+                        <li><a>Monitory na doma</a></li>
+                        <li><a>Monitory na práci</a></li>
+                        <li><a>Monitory na hraní</a></li>
+                        <li><a>Thunderbolt/USB-C</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <span>Nakupovat podle velikosti</span>
+                    <ul>
+                        <li><a>Méně než 21"</a></li>
+                        <li><a>22"-24"</a></li>
+                        <li><a>25"-27"</a></li>
+                        <li><a>28"-32"</a></li>
+                        <li><a>34" nebo více"</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <div class="img-overlayed monitor">
+                        <div class="overlay">
+                            <p class="title">L32P-30 32" 4K UHD</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="img-overlayed monitor-2">
+                        <div class="overlay">
+                            <p class="title">L28U-35 28" 4K UHD</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <a class="a-img" data-hover-menu="gaming">
+            <img src="resources/img/icon/gaming.svg">
+            <img class="hover" src="resources/img/icon/gaming-hover.svg">
+            <span>Herní</span>
+        </a>
+
+        <div data-hover-menu="gaming" class="menu">
+
+            <div class="row first">
+                <div class="col">
+                    <span>Prozkoumat herní</span>
+                    <ul>
+                        <li><a>Legion go</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <div class="img-overlayed legion">
+                        <div class="overlay">
+                            <p class="title">Legion</p>
+                            <p>Stylový zvenku. Nelítostný uvnitř.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="img-overlayed ideapad">
+                        <div class="overlay">
+                            <p class="title">IdeaPad Gaming</p>
+                            <p>Cenově dostupná herní zařízení</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <a class="a-img" data-hover-menu="accessories">
+            <img src="resources/img/icon/accessories.svg">
+            <img class="hover" src="resources/img/icon/accessories-hover.svg">
+            <span>Příslušenství</span>
+        </a>
+
+        <div data-hover-menu="accessories" class="menu">
+
+            <div class="row first">
+                <div class="col">
+                    <span>Co je nového</span>
+                    <ul>
+                        <li><a>Příslušenství Lenovo Go</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <span>Vybrané příslušenství</span>
+                    <ul>
+                        <li><a>Sluchátka ThinkPad X1 ANC</a></li>
+                        <li><a>Myš ThinkPad X1 Presenter Mouse</a></li>
+                        <li><a>Sluchátka Yoga ANC</a></li>
+                        <li><a>Myš Yoga s laserový prezentérem</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <div class="img-overlayed lenovo-go">
+                        <div class="overlay">
+                            <p class="title">Lenovo Go</p>
+                            <p>Pracujte po svém</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="spinner">
+
+        <div class="countdown-wrapper">
+            <p class="title">Časově omezená sleva 20 % na veškerý sortiment.</p>
+            <table>
+                <tr class="countdown"></tr>
+                <tr>
+                    <th>Dní</th>
+                    <th>Hodin</th>
+                    <th>Minut</th>
+                    <th>Vteřin</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="contents">
+
+            <div class="overlay-wrapper">
+                <div class="overlay active" data-img="resources/img/spinner/thinkpad_x1.png">
+                    <div class="logo-wrapper">
+                        <img class="logo" src="resources/img/products/logo/thinkpad_x1.svg">
+                    </div>
+                    <h2>ThinkPad X1 Carbon Gen 11</h2>
+                    <h2 class="sub">Přivítejte novou generaci X1 Carbon!</h2>
+                    <p>Perfektní firemní notebook s konzistentní odezvou, okamžitým probuzením, celodenní výdrží
+                        baterie,
+                        rychlým nabíjením a dalšími funkcemi.</p>
+                    <a href="product.html" class="button">Zjistěte Více</a>
+                </div>
+
+                <div class="overlay" data-img="resources/img/spinner/legion.png">
+                    <div class="logo-wrapper">
+                        <img class="logo" src="resources/img/products/logo/legion.svg">
+                    </div>
+                    <h2>Legion</h2>
+                    <h2 class="sub">Herní notebooky a stolní počítače</h2>
+                    <p>Ať už jste příležitostný nebo profesionální hráč, máme pro vás to pravé zařízení!</p>
+                    <a class="button">Více informací</a>
+                </div>
+
+                <div class="overlay" data-img="resources/img/spinner/yoga.png">
+                    <div class="logo-wrapper">
+                        <img class="logo" src="resources/img/products/logo/yoga.avif">
+                    </div>
+                    <h2>Yoga</h2>
+                    <h2 class="sub">Vyberte si své zařízení Yoga</h2>
+                    <p>Proměňte nápady v realitu. Zvyšte své ambice. Zapůsobte.</p>
+                    <a class="button">Více informací</a>
+                </div>
+
+                <div class="pagination">
+                    <span class="active">X1 CARBON GEN 11</span>
+                    <span>LEGION</span>
+                    <span>YOGA</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bullets">
+            <div class="bullet active"></div>
+            <div class="bullet"></div>
+            <div class="bullet"></div>
+        </div>
+
+    </div>
+
+    <div class="products">
+
+        <div class="filter-tab">
+            <span class="active">Na práci</span>
+            <span>Do domácnosti</span>
+            <span>Na hraní</span>
+        </div>
+
+        <div class="section">
+            <h2>Na práci</h2>
+            <div class="product-list active">
+
+                <a href="product.html">
+                    <div class="product-card">
+                        <img src="resources/img/products/x1_carbon.png">
+                        <h3>Thinkpad X1 Carbon Gen 11 (14, Intel)</h3>
+                        <p>Výjimečně lehký. Výjimečně rychlý.</p>
+                    </div>
+                </a>
+
+                <a href="product.html">
+                    <div class="product-card">
+                        <img src="resources/img/products/x1_carbon.png">
+                        <h3>Thinkpad T16 Gen 2 (16, AMD)</h3>
+                        <p>Váš osobní počítač</p>
+                    </div>
+                </a>
+
+                <a href="product.html">
+                    <div class="product-card">
+                        <img src="resources/img/products/x1_carbon.png">
+                        <h3>Thinkpad X13 Gen 4 (13, Intel)</h3>
+                        <p>Mobilní výkon a produktivita</p>
+                    </div>
+                </a>
+
+                <a href="product.html">
+                    <div class="product-card">
+                        <img src="resources/img/products/x1_carbon.png">
+                        <h3>Thinkpad L13 Gen 4 (13, Intel)</h3>
+                        <p>Lehký notebook s velkým výkonem</p>
+                    </div>
+                </a>
+
+                <a href="product.html">
+                    <div class="product-card">
+                        <img src="resources/img/products/thinkstation_px.png">
+                        <h3>ThinkStation PX</h3>
+                        <p>Vrchol designu a inženýrství</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Do domácnosti</h2>
+            <div class="product-list">
+
+                <div class="product-card">
+                    <img src="resources/img/products/ideapad.png">
+                    <h3>IdeaPad Pro 5i Gen 8 (16, Intel)</h3>
+                    <p>Chytřejší volba pro vysoký výkon</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="resources/img/products/ideapad.png">
+                    <h3>IdeaPad Slim 5 Gen 8 (14, AMD)</h3>
+                    <p>Chytřejší volba pro mobilitu</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="resources/img/products/ideapad.png">
+                    <h3>IdeaPad Slim 3i Gen 8 (16, Intel)</h3>
+                    <p>Chytřejší volba pro mobilitu</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="resources/img/products/ideapad.png">
+                    <h3>Yoga Slim 7 Gen 8 (14, AMD)</h3>
+                    <p>Vystupte z davu</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="resources/img/products/yoga.png">
+                    <h3>Yoga 7i Gen 8 (16, Intel)</h3>
+                    <p>Popusťte uzdu kreativitě</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Na hraní</h2>
+            <div class="product-list">
+
+                <div class="product-card">
+                    <img src="resources/img/products/legion.png">
+                    <h3>Legion Slim 7i Gen 8 (16, Intel)</h3>
+                    <p>Snadno přenosný 16" herní notebook poháněný umělou inteligencí*</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="resources/img/products/legion.png">
+                    <h3>Legion Pro 7 Gen 8 (16, AMD)</h3>
+                    <p>Vysoký výkon pro vše, co potřebujete</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="resources/img/products/legion.png">
+                    <h3>Legion Pro 5i Gen 8 (16, Intel)</h3>
+                    <p>Vyladěný pomocí umělé inteligence</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="resources/img/products/legion.png">
+                    <h3>Legion LOQ (15, Intel)</h3>
+                    <p>Užijte si novou úroveň hraní her</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="resources/img/products/legion.png">
+                    <h3>Legion LOQ (16, AMD)</h3>
+                    <p>Hraní her na nové úrovni</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="banners">
+
+        <div class="container accessory">
+            <h3>Vyhledejte si příslušenství</h3>
+            <p>Představujeme jednoduchý nástroj, jak si vybrat příslušenství Lenovo, které odemkne plný potenciál vašeho
+                zařízení.</p>
+        </div>
+
+        <div class="container tablet">
+            <h3>Vyberte si správný tablet</h3>
+            <p>S výběrem vám pomůžeme a jednoduše vás provedeme krok za krokem.</p>
+        </div>
+
+        <div class="container notebook">
+            <h3>Vyberte si správný notebook</h3>
+            <p>S výběrem vám pomůžeme a jednoduše vás provedeme krok za krokem.</p>
+        </div>
+
+    </div>
+
+    <div class="categories">
+        <a class="a-img">
+            <img alt="Notebooky" src="resources/img/icon/laptop.svg">
+            <span>Notebooky</span>
+        </a>
+        <a class="a-img">
+            <img alt="Stolní počítače" src="resources/img/icon/desktops.svg">
+            <span>Stolní počítače</span>
+        </a>
+        <a class="a-img">
+            <img alt="Pracovní stanice" src="resources/img/icon/workstations.svg">
+            <span>Pracovní stanice</span>
+        </a>
+        <a class="a-img">
+            <img alt="Tablety" src="resources/img/icon/tablets.svg">
+            <span>Tablety</span>
+        </a>
+        <a class="a-img">
+            <img alt="Monitory" src="resources/img/icon/monitors.svg">
+            <span>Monitory</span>
+        </a>
+        <a class="a-img">
+            <img alt="Herní" src="resources/img/icon/gaming.svg">
+            <span>Herní</span>
+        </a>
+        <a class="a-img">
+            <img alt="Příslušenství" src="resources/img/icon/accessories.svg">
+            <span>Příslušenství</span>
+        </a>
+    </div>
+
+    <div class="explore">
+        <h3>Explore Lenovo</h3>
+        <a href="pc.html">Počítače a tablety</a>
+        <a href="#">Telefony</a>
+        <a href="#">Servery a úložiště</a>
+        <a href="#">Chytrá zařízení</a>
+        <a href="#">Služby a řešení</a>
+        <a href="#">Podpora</a>
+
+    </div>
+
+</div>
+<footer>
+    <div class="row-1">
+        <div class="social">
+            <a href="#" class="icon facebook"></a>
+            <a href="#" class="icon twitter"></a>
+            <a href="#" class="icon youtube"></a>
+            <a href="#" class="icon linkedin"></a>
+            <a href="#" class="icon instagram"></a>
+            <a href="#" class="icon picasa"></a>
+        </div>
+        <div class="language-wrapper">
+            <div>VYBERTE ZEMI/REGION</div>
+            <div class="select-wrapper">
+                <img alt="Vlajka" src="resources/img/flags/cz.png" class="flag">
+                <span class="country-name">Czech republic</span>
+                <img alt="arrow" src="resources/img/arrow_down.png" class="arrow">
+                <select>
+                    <option value="cz">Czech Republic</option>
+                    <option value="sk">Slovakia</option>
+                    <option value="de">Germany</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="row-2">
+        <div class="collapsible">
+            <span class="bordered-plus">O společnosti Lenovo</span>
+            <div style="display:none;" class="content">
+                <ul>
+                    <li><a href="#">O společnosti Lenovo</a></li>
+                    <li><a href="#">Novinky</a></li>
+                    <li><a href="#">Vztahy s investory (En)</a></li>
+                    <li><a href="#">ESG</a></li>
+                    <li><a href="#">Právní informace (En)</a></li>
+                    <li><a href="#">Práce ve společnosti Lenovo (En)</a></li>
+                    <li><a href="#">Formule 1</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="collapsible">
+            <span class="bordered-plus">Produkty a služby</span>
+            <div style="display:none;" class="content">
+                <ul>
+                    <li><a href="#">Notebooky</a></li>
+                    <li><a href="#">Stolní počítače</a></li>
+                    <li><a href="#">Pracovní stanice</a></li>
+                    <li><a href="#">Tablety</a></li>
+                    <li><a href="#">Chytrá zařízení</a></li>
+                    <li><a href="#">Řešení datových center (En)</a></li>
+                    <li><a href="#">Služby Lenovo</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="collapsible">
+            <span class="bordered-plus">Zdroje</span>
+            <div style="display:none;" class="content">
+                <ul>
+                    <li><a href="#">Kde zakoupit</a></li>
+                    <li><a href="contact.html">Kontaktujte nás</a></li>
+                    <li><a href="#">Shoda výrobků (En)</a></li>
+                    <li><a href="#">Zabezpečení produktu</a></li>
+                    <li><a href="#">Stažení produktu</a></li>
+                    <li><a href="#">Fóra</a></li>
+                    <li><a href="#">Podpora (En)</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row-3">
+        <span>Zdroj: <a href="https://www.lenovo.com/cz/cs/">lenovo.cz</a> <b>Tato webová stránka je pouze studentský projekt.</b></span>
+        <a href="#">Vytisknout stránku</a>
+        <a href="#">Soukromí</a>
+        <a href="#">Cookie Nástroj Souhlas</a>
+        <a href="#">Mapa stránek</a>
+        <a href="#">Podmínky použití</a>
+    </div>
+</footer>
+</body>
+</html>

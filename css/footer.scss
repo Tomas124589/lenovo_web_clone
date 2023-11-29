@@ -1,0 +1,209 @@
+$mobile: 750px;
+$tablet: 1180px;
+
+footer {
+  padding: 0.9375em 2em;
+  position: relative;
+  background-color: #bbb;
+
+  .row-1 {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2em;
+
+    .social {
+      margin-top: 2em;
+
+      @media screen and (max-width: $mobile) {
+        margin-top: 0;
+        padding: 1.25em 0;
+      }
+    }
+
+    a.icon {
+      background-image: url("../resources/img/social.webp");
+      background-repeat: no-repeat;
+      display: inline-block;
+      width: 33px;
+      height: 33px;
+
+      &.facebook {
+        background-position: -61px 0px;
+
+        &:hover {
+          background-position: -61px -38px;
+        }
+      }
+
+      &.twitter {
+        background-position: -61px -530px;
+
+        &:hover {
+          background-position: -61px -568px;
+        }
+      }
+
+      &.youtube {
+        background-position: -61px -606px;
+
+        &:hover {
+          background-position: -61px -644px;
+        }
+      }
+
+      &.linkedin {
+        background-position: -61px -834px;
+
+        &:hover {
+          background-position: -61px -872px;
+        }
+      }
+
+      &.instagram {
+        background-position: -61px -682px;
+
+        &:hover {
+          background-position: -61px -720px;
+        }
+      }
+
+      &.picasa {
+        background-position: -61px -758px;
+
+        &:hover {
+          background-position: -61px -796px;
+        }
+      }
+    }
+
+    .language-wrapper {
+
+      margin-top: .4375em;
+
+      & > div {
+        margin: 0;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        color: #555;
+        font-weight: bold;
+
+        @media screen and (max-width: $tablet) {
+          display: none;
+        }
+
+        @media screen and (max-width: $mobile) {
+          display: block;
+        }
+      }
+
+      .select-wrapper {
+        position: relative;
+        width: 328px;
+        height: 30px;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+
+        background: #888;
+
+        .flag {
+          flex-basis: 13%;
+        }
+
+        .country-name {
+          flex: 1;
+          padding-left: 1em;
+          color: #222;
+          text-transform: none;
+          font-weight: normal;
+          font-size: 0.9rem;
+        }
+
+        .arrow {
+          flex-basis: 13%;
+        }
+
+        select {
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          position: absolute;
+        }
+      }
+
+      @media screen and (max-width: $tablet) {
+        position: absolute;
+        right: 16px;
+        bottom: 190px;
+      }
+
+      @media screen and (max-width: $mobile) {
+        position: unset;
+        padding-left: 1em;
+        padding-bottom: 1em;
+      }
+    }
+
+    @media screen and (max-width: $tablet) {
+      margin-top: 0;
+    }
+
+    @media screen and (max-width: $mobile) {
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+
+  .row-2 {
+    display: flex;
+    padding: 1.125em 0 .9375em 0;
+    gap: 8px;
+
+    @media screen and (max-width: $tablet) {
+      padding: 2em;
+    }
+
+    @media screen and (max-width: $mobile) {
+      flex-direction: column;
+      padding: 0;
+
+      .collapsible {
+
+        border-top: 1px solid black;
+        padding: 1.25em 3.125em 1em;
+
+        &:last-child {
+
+          border-bottom: 1px solid black;
+        }
+      }
+    }
+  }
+
+  .row-3 {
+    font-size: 0.7rem;
+    line-height: 1.1rem;
+    color: #373737;
+    padding-bottom: 1em;
+
+    a {
+      color: #373737;
+      margin-right: 0.625em;
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: $tablet) {
+      padding: 0.625em 1.875em;
+    }
+
+    @media screen and (max-width: $mobile) {
+      padding-bottom: 15em;
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    padding: 0;
+  }
+}
